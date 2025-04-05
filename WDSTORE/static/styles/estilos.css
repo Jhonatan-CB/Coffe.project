@@ -1,0 +1,211 @@
+/* Importar fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* --- ESTILOS GENERALES --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4; /* Fondo claro por defecto */
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- ENCABEZADO --- */
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), rgba(129, 65, 51, 0.87); /* Adaptado del HTML */
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 20vh; /* Ajustado para un header más compacto */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+header .fs-4 {
+    color: #FFFDFC;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* --- MENÚ DE NAVEGACIÓN --- */
+.nav-pills {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.nav-pills .nav-link {
+    font-size: 18px;
+    padding: 15px 20px;
+    color: #FFFDFC;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-pills .nav-link:hover {
+    color: #CE967B; /* Color de hover del guía */
+}
+
+.nav-pills .nav-link.active {
+    color: #FFFDFC;
+    background-color: #6c90be; /* Color activo del HTML original */
+    border-radius: 5px;
+}
+
+/* --- SECCIÓN LATERAL (ASIDE) --- */
+.aside {
+    background-color: #023786; /* Color del HTML original */
+    padding: 30px;
+    text-align: center;
+    color: #FFFDFC;
+}
+
+.aside h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFFDFC;
+    margin-bottom: 15px;
+}
+
+.aside p {
+    font-size: 16px;
+    color: #C5C5C5;
+}
+
+/* --- CONTENIDO PRINCIPAL (SECCIONES: ENTRADAS, PLATOS, POSTRES, BEBIDAS) --- */
+section {
+    padding: 50px 0;
+    background-color: #E1E2E6; /* Fondo claro similar al guía */
+}
+
+section h2 {
+    font-size: 55px;
+    line-height: 60px;
+    color: #323337;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section > p {
+    font-size: 16px;
+    color: #414247;
+    text-align: center;
+    padding: 0 100px;
+    margin-bottom: 35px;
+}
+
+/* --- ÍTEMS DEL MENÚ --- */
+.menu-item {
+    background-color: #FFFDFC;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    color: #323337;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #414247;
+}
+
+/* --- PIE DE PÁGINA --- */
+.footer {
+    background-color: #000000; /* Color del guía */
+    padding: 50px 0;
+    text-align: center;
+    color: #FFFDFC;
+}
+
+.footer p {
+    font-size: 16px;
+    color: #C5C5C5;
+}
+
+/* --- RESPONSIVIDAD --- */
+@media (max-width: 991px) {
+    /* Ajuste del header */
+    header {
+        min-height: 15vh;
+        padding: 20px;
+    }
+
+    /* Menú de navegación */
+    .nav-pills {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-pills .nav-link {
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    /* Columnas */
+    [class*="col-"] {
+        float: none;
+        width: 100%;
+    }
+
+    /* Aside */
+    .aside {
+        padding: 20px;
+    }
+
+    /* Secciones */
+    section {
+        padding: 30px 15px;
+    }
+
+    section h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    section > p {
+        padding: 0 20px;
+    }
+
+    /* Ítems del menú */
+    .menu-item {
+        margin: 10px 15px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 15px;
+    }
+}
+
+#cafee{
+
+    cursor:pointer;
+}
